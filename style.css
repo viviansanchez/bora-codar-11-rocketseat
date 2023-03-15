@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  height: 100vh;
+  background-color: #f8fafc;
+}
+
+header img {
+  max-width: 10rem;
+  max-height: 3.375rem;
+  margin: 2.5rem 0 7.125rem 1rem;
+}
+
+main {
+  max-width: 24rem;
+  margin: 0 1rem;
+}
+
+main .text-wrapper {
+  max-width: 22rem;
+  margin-bottom: 2.5rem;
+}
+
+main .text-wrapper h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #1e293b;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #475569;
+}
+
+main .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+main .form-wrapper form .input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1e293b;
+}
+
+.input-wrapper input {
+  padding: 1rem 0.75rem;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.input-wrapper input::placeholder {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.input-wrapper input:hover,
+.input-wrapper input:focus {
+  border: 1px solid #7c3aed;
+}
+
+.input-wrapper input:invalid {
+  border: 1px solid #ed3a5a;
+}
+
+/* .form-wrapper form #when-invalid {
+  color: #ed3a5a;
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  opacity: 0;
+} */
+
+.form-wrapper form .btn-submit {
+  margin: 1rem 0 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  background-color: #7c3aed;
+  border: transparent;
+  cursor: pointer;
+
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+
+  transition: background-color 0.3s;
+}
+
+.form-wrapper form .btn-submit:hover {
+  background-color: #9f67ff;
+}
+
+a {
+  text-decoration: transparent;
+  color: #7c3aed;
+
+  transition: text-decoration 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.forgot-password {
+  font-weight: 600;
+  font-size: 0.875rem;
+  position: relative;
+  top: -11.875rem;
+  right: -16.563rem;
+}
+
+a.signup {
+  font-weight: 700;
+}
+
+/* media queries */
+/* precisa tirar o position relative e etc quando a tela ficar menor que 412px, e ai deixar no fim da pagina mesmo antes do ainda nao tem uma conta */
+/* o outro media query é a partir de 412px centralizar o content wrapper no meio da tela */
+/* e o terceiro e último media query é pra colocar o content wrapper no 50% e background nos outros 50% */
+@media (max-width: 414px) {
+  a.forgot-password {
+    position: static;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 819px) {
+  main {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 820px) {
+  body {
+    display: flex;
+  }
+
+  .content-wrapper {
+    width: 50%;
+  }
+
+  .background-image-wrapper {
+    width: 50%;
+    background-image: url("./assets/bg-desktop-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1215px) {
+  header,
+  main {
+    margin-left: 7rem;
+  }
+}

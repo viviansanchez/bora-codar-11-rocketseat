@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bora Codar 11 - Página de Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <img src="./assets/logo.png" alt="Logo da empresa fictícia Vertigo" />
+      </header>
+      <main>
+        <div class="text-wrapper">
+          <h1>Acesse a plataforma</h1>
+          <p>
+            Faça login ou registre-se para começar a construir seus projetos
+            ainda hoje.
+          </p>
+        </div>
+        <div class="form-wrapper">
+          <form>
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Digite seu e-mail"
+                oninvalid="showText()"
+              />
+            </div>
+            <!-- <p id="when-invalid">Digite um e-mail válido</p> -->
+            <div class="input-wrapper">
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Digite sua senha"
+              />
+            </div>
+            <input class="btn-submit" type="submit" value="Entrar" />
+          </form>
+        </div>
+        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        <p>
+          Ainda não tem uma conta? <a class="signup" href="#">Inscreva-se</a>
+        </p>
+      </main>
+    </div>
+    <div class="background-image-wrapper"></div>
+  </body>
+</html>
