@@ -87,6 +87,19 @@ main .form-wrapper form .input-wrapper {
   opacity: 0;
 } */
 
+.input-wrapper .eye {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  position: absolute;
+  top: 2.3rem;
+  right: 1rem;
+}
+
+.password-input {
+  position: relative;
+}
+
 .form-wrapper form .btn-submit {
   margin: 1rem 0 2rem;
   padding: 1rem 1.5rem;
